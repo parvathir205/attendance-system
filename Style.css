@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("bg.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Design */
+.login-box {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+.login-box input, 
+.login-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+    border-color: #4CAF50;
+}
+
+/* Buttons */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, blue, #2e8b57);
+    color:lavender;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg,blue, blue);
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+table th {
+    background: White;
+    color: green;
+    padding: 10px;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Message */
+#msg {
+    color: green;
+    margin-top: 10px;
+}
+
+/* CAPTCHA */
+.captcha-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#captcha {
+    background: gray;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
